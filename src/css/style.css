@@ -3,10 +3,17 @@
     font-family: 'Roboto', sans-serif;
 }
 
+header {
+    position: relative;
+}
 
 nav {
     height: 53px;
     background: #212121;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
 }
 
 .header_menu {
@@ -28,6 +35,9 @@ nav {
 }
 
 .subheader {
+    position: absolute;
+    top: 53px;
+    width: 100%;
     background: rgba(0, 0, 0, 0.6);
     height: 87px;
 }
@@ -82,3 +92,121 @@ nav {
     color: #FFFFFF;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
 }
+
+.promo {
+    padding-top: 156px;
+    min-height: 800px;
+    background: url("../img/bg/uber_bg.jpg") center center/cover no-repeat;
+}
+
+.promo_header {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.promo_subheader {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.promo_text {
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.promo_btn {
+    display: block;
+    margin: 115px auto 186px auto;
+    width: 259px;
+    height: 63px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+.reason {
+    padding: 18px 0 67px 0;
+}
+
+.reason_subheader {
+    display: block;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    background: #000000;
+    max-width: 115px;
+}
+
+.reason_header {
+    margin-top: 32px;
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.blue_circle {
+    min-width: 116px;
+    min-height: 116px;
+    background: #1EACC7;
+    border-radius: 100%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reason_text {
+    margin-left: 25px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+}
+
+.reason_special_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #1EACC7;
+}
+
+.reason_item {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
