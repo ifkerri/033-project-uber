@@ -1,6 +1,18 @@
 
-$color_blue: #1eacc7	
-	
+// var
+$color_blue: #1eacc7
+
+// mix	
+@mixin plus_line_img
+	position: absolute
+	content: ''
+	display: inline-block
+	background-color: $color_blue
+
+@mixin btn_hover
+	background-image: linear-gradient(to top, $color_blue 0%, #d43f3f 100%)	
+		
+// style
 *
 	font-family: 'Roboto', sans-serif
 
@@ -73,6 +85,10 @@ nav
 		font-size: 14px
 		font-weight: 400
 		text-transform: uppercase
+		transition: 2s all
+		&:hover
+			@include btn_hover
+
 
 .promo
 	min-height: 800px
@@ -116,9 +132,9 @@ nav
 		font-size: 18px
 		font-weight: 400
 		text-transform: uppercase
-
-.reasons
-  	padding: 71px 0 65px 0
+		transition: 2s all
+		&:hover
+			@include btn_hover
 
 .label
 	position: relative
@@ -162,11 +178,13 @@ nav
 	&_white
 		color: #FFFFFF
 
-.reasons .reasons_block
-	display: flex
-	justify-content: center
-	align-items: center
-	margin-top: 35px
+.reasons
+	padding: 71px 0 65px 0
+	&_block
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-top: 35px
 	&_round
 		display: flex
 		justify-content: center
@@ -216,8 +234,29 @@ nav
 			bottom: 41px
 			transform: translateX(-50%)
 			left: 50%
-			width: 29px
-			height: 29px
+			&_round
+				position: relative
+				width: 30px
+				height: 30px
+				background: #000000
+				border-radius: 100%
+				transition: 0.5s all
+				&::after
+					width: 16px
+					height: 2px
+					top: 50%
+					left: 7px
+					transform: translateY(-50%) 
+					@include plus_line_img
+				&::before
+					width: 2px
+					height: 16px
+					left: 50%
+					top: 7px
+					transform: translateX(-50%)
+					@include plus_line_img
+				&:hover
+					background: #373232	
 
 	.row
 		margin-top: 30px
