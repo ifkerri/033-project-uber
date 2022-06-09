@@ -117,9 +117,6 @@ nav
 		text-transform: uppercase
 		+btn_hover
 
-.reasons
-	padding: 71px 0 65px 0
-
 .label
 	position: relative
 	margin: 0 auto
@@ -164,12 +161,14 @@ nav
 	&_white 
 		color: #fff
 
-.reasons .reasons_block
-	display: flex
-	justify-content: center
-	align-items: center
-	margin-top: 35px
-	.reasons_round
+.reasons
+	padding: 71px 0 65px 0
+	&_block
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-top: 35px
+	&_round
 		display: flex
 		justify-content: center
 		align-items: center
@@ -178,18 +177,18 @@ nav
 		height: 113px
 		background-color: $main-color
 		border-radius: 100%
-	.reasons_descr
+	&_descr
 		width: 343px
-		.reasons_subtitle
-			line-height: 21px
-			color: $main-color
-			font-size: 17px
-			font-weight: 400
-		.reasons_text
-			color: #202020
-			font-size: 15px
-			font-weight: 300
-			line-height: 21px
+	&_subtitle
+		line-height: 21px
+		color: $main-color
+		font-size: 17px
+		font-weight: 400
+	&_text
+		color: #202020
+		font-size: 15px
+		font-weight: 300
+		line-height: 21px
 	
 .mobile 
 	min-height: 864px
